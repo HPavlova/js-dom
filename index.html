@@ -1,13 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS-DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"></header>
+      <nav class="nav">
+        <div class="nav__top">
+          <img src="./images/icons/Lights.svg" alt="lights" />
+          <div class="nav__top__name">
+            <img
+              src="./images/icons/mastercard-line.svg"
+              alt="mastercard-line"
+            />
+            <h2 class="nav__top__title">ModGallery</h2>
+            <img src="./images/icons/Shape.svg" alt="shape" />
+          </div>
+          <input
+            class="nav__top__input"
+            type="text"
+            id="search"
+            name="search"
+            placeholder="&#128269;   Search instances"
+            required
+          />
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Union.svg"
+                  alt="Union"
+                />
+                <div class="paragraph">
+                  <span class="solid" id="top">Weekly top</span>
+                  <span id="top">promoted</span>
+                </div>
+              </a>
+              <img
+                class=""
+                src="./images/icons/Rectangle 1.svg"
+                alt="Rectangle 1"
+              />
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 1004.svg"
+                  alt="Fill 1004"
+                />
+                <span id="Single objects">Single objects</span>
+              </a>
+            </li>
+            <li class="nav__item sets">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 997.svg"
+                  alt="Fill 997"
+                />
+                <span id="Objects sets">Objects sets</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 1007.svg"
+                  alt="Fill 1007"
+                />
+                <span id="myGallery">My gallery</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 1161.svg"
+                  alt="Fill 1161"
+                />
+                <span id="favourites">Favourites</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__bottom">
+          <li class="nav__item" id="ad">
+            <img
+              class="nav__link__img"
+              src="./images/icons/Union.svg"
+              alt="Union"
+            />
+            <div class="paragraph">
+              <span>Switch account to</span>
+              <span class="solid">Pro</span>
+              <span class="paragraph__min"
+                >Unlimited access to biggest 3d models service with highest
+                quality</span
+              >
+              <a href="#" class="nav__link green paragraph__min"
+                >Get your Pro
+                <img
+                  class="paragraph__min__img"
+                  src="./images/icons/Frame 6.svg"
+                  alt="Frame 6"
+                />
+              </a>
+            </div>
+          </li>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 1157.svg"
+                  alt="Fill 1157"
+                />
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__link__img"
+                  src="./images/icons/Fill 951.svg"
+                  alt="Fill 951"
+                />
+                <span>FAQ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main">
+        <article>
+          <h2 class="article__title">H2</h2>
+          <p class="article__desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde odio
+            molestias, deserunt adipisci voluptatem vero! Numquam natus amet
+            pariatur officia officiis iusto perferendis? Dolor provident nemo
+            suscipit laboriosam modi veniam!
+          </p>
+          <ul class="article__list"></ul>
+          <ul class="article__list__sets"></ul>
+        </article>
+      </main>
+    </div>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
+
+<!-- комплексна реалізація full page responsive layout (курс Udacity про адаптивний HTML/CSS).
+ви можете зберігати дані в масиві об’єктів
+ви можете використовувати innerHTML, insertAdjacentHTML, append, createElement, addEventListener,
+будуть корисними методи масиву як Array#filter, Array#sort, Array#find, etc.
+і звичайно - методи DOM. -->
